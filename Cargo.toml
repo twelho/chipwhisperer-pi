@@ -1,0 +1,23 @@
+[package]
+name = "pi-target"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "simpleserial-aes"
+path = "src/simpleserial-aes.rs"
+
+[[bin]]
+name = "simpleserial-glitch"
+path = "src/simpleserial-glitch.rs"
+
+[dependencies]
+bytes = "1.5.0"
+embedded-hal = "0.2.7"
+hex = "0.4.3"
+rppal = { version = "0.16.0", features = ["hal"] }
+
+[build-dependencies]
+cc = "1.0.83"
