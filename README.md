@@ -1,6 +1,6 @@
 # chipwhisperer-pi
 
-Software emulation of [ChipWhisperer firmware](https://github.com/newaetech/chipwhisperer/tree/develop/hardware/victims/firmware) written in Rust. Intended to be executed as an application on a Raspberry Pi. Currently, (partially) implements the following firmwares:
+Software emulation of [ChipWhisperer firmware](https://github.com/newaetech/chipwhisperer/tree/develop/hardware/victims/firmware) written in Rust. Intended to be executed as an application on a Raspberry Pi 4. Currently, (partially) implements the following firmwares:
 
 - [`simpleserial-aes`](https://github.com/newaetech/chipwhisperer/blob/develop/hardware/victims/firmware/simpleserial-aes/simpleserial-aes.c) (SS v1.1)
   - TINYAES128C variant, AES component implemented in C
