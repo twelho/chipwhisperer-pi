@@ -2,6 +2,9 @@
 name = "pi-target"
 version = "0.1.0"
 edition = "2021"
+default-run = "simpleserial-glitch"
+authors = ["Dennis Marttinen <twelho@welho.tech>"]
+license = "GPL-3.0-or-later"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,6 +18,8 @@ path = "src/simpleserial-glitch.rs"
 
 [dependencies]
 bytes = "1.5.0"
+cobs = "0.2.3"
+crc-any = "2.4.3"
 embedded-hal = "0.2.7"
 hex = "0.4.3"
 rppal = { version = "0.16.0", features = ["hal"] }
